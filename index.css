@@ -1,0 +1,836 @@
+/* Project Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* General styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', serif !important;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+}
+
+.head-nav{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+}
+.head-nav::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.navbar{
+    width: 100vw;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    transition: background-color 0.8s;
+    z-index: 1;
+}
+
+.navbar-image{
+    width: 50px;
+}
+
+.scrolled{
+    background-color: #111f28;
+    box-shadow: 0 1px 5px #060607;
+    z-index: 5;
+}
+
+.navbar-nav .nav-item a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 5;
+}
+
+.intr{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.intr h1{
+    position: absolute;
+    color: #fff;
+    top: 45%;
+    right: 50px;
+    font-size: 50px;
+}
+
+.intr .social-medias{
+    position: absolute;
+    top: 55%;
+    right: 50px;
+}
+
+.intr .social-medias ul{
+    display: flex;
+    list-style: none;
+}
+
+.intr .social-medias ul a{
+    margin: 10px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.intr .social-medias ul a:hover .linkedln{
+    color: #0e76a8;
+}
+
+.intr .social-medias ul a:hover .instagram{
+    background: radial-gradient(circle, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intr .social-medias ul a:hover .email{
+    color: #e9c110;
+}
+
+.intr .social-medias ul a:hover .telephone{
+    color: #0e76a8;
+}
+
+.intr .social-medias ul a:hover .github{
+    color: #111f28;
+}
+
+.aboutme{
+    text-align: justify;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme .profile_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.aboutme p{
+    width: 50%;
+    margin: 20px 0;
+}
+
+.aboutme .title{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.resume{
+    width: 95vw;
+    display: flex;
+    margin: 10px auto;
+}
+
+.resume .left-container{
+    width: 20%;
+    background-color: #111f28;
+    margin: 10px;
+    height: 700px;
+    z-index: -5;
+}
+
+.resume .left-container .img-container{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.resume .left-container .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.resume .left-container .info{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.resume .left-container .info li{
+    margin: 10px;
+}
+
+.resume .left-container .info li a{
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.resume .left-container .skill-container{
+    z-index: 0;
+}
+
+.resume .left-container .skill-container .title{
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.resume .left-container .skill-container .js h3{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .js .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .js .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .js .skill::after{
+    position: absolute;
+    content: '70%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .lang-es h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .lang-es .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .lang-es .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .lang-es .skill::after{
+    position: absolute;
+    content: '100%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+
+.resume .left-container .skill-container .lang-en h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .lang-en .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .lang-en .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .lang-en .skill::after{
+    position: absolute;
+    content: '70%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .html h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .html .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .html .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .html .skill::after{
+    position: absolute;
+    content: '70%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .css h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .css .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .css .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .css .skill::after{
+    position: absolute;
+    content: '80%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .cplus h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .cplus .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 30%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .cplus .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .cplus .skill::after{
+    position: absolute;
+    content: '30%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .cplus h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .cplus .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 30%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .cplus .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .cplus .skill::after{
+    position: absolute;
+    content: '30%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .angular h3{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .angular .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .angular .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .angular .skill::after{
+    position: absolute;
+    content: '70%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .left-container .skill-container .ts h3{
+    margin: 15px 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.resume .left-container .skill-container .ts .skill{
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resume .left-container .ts .skill::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    top: -4px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+
+.resume .left-container .ts .skill::after{
+    position: absolute;
+    content: '70%';
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 7px;
+    top: -30px;
+    right: -10px;
+}
+
+.resume .center-container{
+    width: 60%;
+}
+
+.resume .center-container .education-container{
+    margin: 15px 10px;
+}
+
+.resume .center-container .education-container .college{
+    margin: 10px 0;
+}
+
+.resume .center-container .experiences-container{
+    margin: 15px 10px;
+}
+
+.resume .right-container{
+    background-color: #111f28;
+    width: 20%;
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.resume .right-container .courses-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.resume .right-container .courses-container .course{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    height: 360px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.resume .right-container .courses-container .course .course-img{
+    width: 100%;
+    height: 250px;
+}
+.resume .right-container .courses-container .course .course-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.resume .right-container .courses-container .course .course-text .course-title{
+    text-align: center;
+    margin: 5px;
+}
+
+.resume .right-container .courses-container .course .course-text .course-certificate{
+    display: flex;
+    justify-content: center;
+}
+
+.resume .right-container .courses-container .course .course-text .course-certificate a{
+    background-color: #0056D2;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.resume .right-container .courses-container .course .course-text .course-certificate a:hover{
+    background-color: #02315E;
+    color: #9AA8A8;
+}
+
+.contact{
+    width: 100vw;
+    margin: 10px;
+}
+
+.contact .contact-form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.contact .contact-form .form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact .contact-form .form label{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form .form label input{
+    margin: 5px 0;
+    padding: 10px;
+}
+
+
+.contact .contact-form .form .button{
+    display: flex;
+    margin: 10px 0;
+}
+
+.contact .contact-form .form input[type="submit"]{
+    width: 50%;
+    background-color: #02315E;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact .contact-form .form input[type="reset"]{
+    width: 50%;
+    background-color: #02315E;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.trajectory h1{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.trajectory table{
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+.trajectory table th{
+    padding: 10px;
+}
+
+.trajectory table th:nth-child(odd){
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+.trajectory table th:nth-child(even){
+    background-color: #02315E;
+    color: #fff;
+}
+
+.trajectory table td:nth-child(even){
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+.trajectory table td:nth-child(odd){
+    background-color: #02315E;
+    color: #fff;
+}
+
+.trajectory table a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.trajectory table a:hover{
+    color: #e9c110;
+    font-weight: 700;
+}
+
+.trajectory table td{
+    padding: 10px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #111f28;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer p{
+    margin-top: 10px;
+}
+
+.fixed{
+    display: fixed;
+}
+
+@media screen and (width < 992px) {
+    .navbar{
+        background-color: #111f28;
+        box-shadow: 0 1px 5px #060607;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .intr h1{
+        position: relative;
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        font-size: 1.5em;
+    }
+
+    .intr .social-medias{
+        position: relative;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+
+    .intr .social-medias ul{
+        justify-content: center;
+    }
+
+    .intr .social-medias ul li a{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .resume .right-container{
+        width: 30%;
+    }
+
+    .resume .center-container{
+        width: 40%;
+    }
+
+    .resume .left-container{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .resume {
+        flex-direction: column;
+    }
+    .resume .left-container{
+        width: 100%;
+    }
+    .resume .center-container{
+        width: 100%;
+    }
+    .resume .right-container{
+        width: 100%;
+    }
+    .contact .contact-form{
+        width: 70%;
+    }
+
+    .trajectory table{
+        width: 50%;
+    }
+}
